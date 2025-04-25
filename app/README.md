@@ -10,6 +10,10 @@ The app dynamically requests the necessary runtime permissions, supports API 26+
 
 ---
 
+### When a text (SMS) comes into the phone/emulator with the app installed:
+1. Android System Broadcasts an Intent. Android sends a system-wide broadcast automatically.
+2. MyReceiver (BroadcastReceiver) is triggered. This happens immediately even if the app is in the background or not open.
+
 ## File Descriptions
 
 ### `MainActivity.java`
